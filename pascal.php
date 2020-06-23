@@ -13,14 +13,15 @@
     <title>Pascal triangle</title>
   </head>
   <body>
-    <div> This will create a pascal triangle. I will make it pretty in the future, but it's just this for now.
+    <div>
+      <form action = "pascal.php" method = "get">
+        This will create a pascal triangle.
+        How many rows, would you like your pascal triangle to have? <br>
+        <input type="number" name="num" value="25">
+        <input type="submit">
+        
+      </form>
     </div>
-    <form action="pascal.php" method="get">
-      How many rows, would you like your pascal triangle to have? <br>
-      <input type="number" name="num" value="25">
-      <input type="submit">
-
-    </form>
     <h6>
       <?php
       $level = $_GET["num"];
