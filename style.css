@@ -1,0 +1,205 @@
+
+@font-face {
+  font-family: DejaVuSansMono;
+  src: url('resources/fonts/DejaVuSansMono.ttf');
+}
+@font-face {
+  font-family: DejaVuSansMono-Bold;
+  src: url('resources/fonts/DejaVuSansMono-Bold.ttf');
+}
+@keyframes hoverOver {
+  0% {
+    background-color: rgb(0, 0, 0);
+    height: 0px;
+  }
+  25%{
+    background-color: rgb(250, 117, 160);
+    height: 52px;
+  }
+
+  100% {
+    background-color: rgb(221, 87, 130);
+    height: 48px;
+  }
+}
+/* navigation bar */
+.navbar{
+  font-family: DejaVuSansMono;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  height: 48px;
+}
+.navbar a {
+  float: right;
+  color: rgb(221, 87, 130);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.navbar a:hover {
+  justify-content: center;
+  animation-name: hoverOver;
+  animation-duration: 0.2s;
+  color: black;
+  font-family: DejaVuSansMono-Bold;
+  animation-name: hoverOver;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+  background-color: rgb(221, 87, 130);
+}
+@media only screen and (max-width: 600px) {
+  .welcome-section h1{
+    font-size: 5.4vw;
+  }
+  .welcome-section h2{
+    font-size: 4vw;
+  }
+
+}
+
+
+body{
+  font-family: DejaVuSansMono;
+  background-color: rgb(39, 36, 43);
+  color: rgb(230, 255, 252);
+  margin: 0;
+  padding: 0;
+}
+.welcome-section{
+  background-image: linear-gradient(to bottom right, rgb(89, 61, 121), rgb(16, 2, 20));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+header{
+  text-align: center;
+  background-color: rgb(16, 2, 20);
+  height: 48px;
+  line-height: 48px;
+  border-color: rgb(221, 87, 130);
+  border-top: 2px;
+}
+
+
+
+.projects-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr) );
+  justify-items: center;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+
+}
+
+.project-tile{
+  background-image: linear-gradient(to bottom right, rgb(64, 92, 189), rgb(25, 37, 88));
+
+  height: 285px;
+  width:270px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+.tile-img{
+  height: 90%;
+  width: 90%;
+}
+.tile-text{
+  text-decoration: none;
+  font-family: DejaVuSansMono-Bold;
+  font-size: 14px;
+  color: white;
+}
+
+.codemarks{
+  color: rgba(207, 101, 21, 0);
+  transition: color 0.3s ease-out;
+}
+.project:hover .codemarks{
+  color: rgba(207, 101, 21);
+  transition: color 0.3s ease-in;
+}
+.project {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+
+
+
+div {
+  text-align: center;
+  font-family: DejaVuSansMono-Bold;
+}
+.contact-section-header{
+  width: 100%;
+  height: 48px;
+
+  font-family: DejaVuSansMono-Bold;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(67, 86, 184);
+}
+
+
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+      font-family: DejaVuSansMono-Bold;
+  }
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  font-family: DejaVuSansMono-Bold;
+  text-decoration: none;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  text-decoration: none;
+  color: gray;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+.contact-img{
+  height: 45px;
+  width: auto;
+}
