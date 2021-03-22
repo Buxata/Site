@@ -89,7 +89,7 @@
     left: -30px;
   }
   body{
-    background-image: url(../images/background.png);
+    background-image: url(images/background.png);
   }
 }
 @media only screen 
@@ -99,7 +99,7 @@
   and (orientation: portrait) {
 
   body{
-      background-image: url(../images/phonebkg.png);
+      background-image: url(images/phonebkg.png);
       background-size: auto;
   }
 }
