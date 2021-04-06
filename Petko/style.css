@@ -17,6 +17,7 @@
   }
   .desc{
     padding-bottom: 50px;
+    width: 80vw;
     font-size: 35px;;
     color: #f0f0f0;
     text-shadow: 1px 4px 4px #555;
@@ -25,6 +26,9 @@
   .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
   }
   .coupon{
     display: flex;
@@ -48,8 +52,6 @@
     background-color: black;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
-    
-
 
     color: #f0f0f0;
     text-shadow: 1px 4px 4px #555;
@@ -88,11 +90,14 @@
   }
 }
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
+  and (max-width: 600px)
+ {
+  .desc{
+    font-size: 5vw;
+  }
+  .leb{
+    font-size: 15vw;
+  }
   body{
       background-image: url(images/phonebkg.png);
       background-size: auto;
