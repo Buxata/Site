@@ -3,6 +3,45 @@
   font-family: ComicSans;
   src: url(fonts/comic.ttf);
 }
+  .leb2{
+    color: #f0f0f0;
+    font-size: 75px;
+    font-family: ComicSans;
+    background-color: #666666;
+    text-shadow: 1px 4px 4px #555;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    -webkit-background-clip: text;
+      -moz-background-clip: text;
+
+  }
+  .pari{
+    text-align: center;
+    color: yellow;
+    font-size: 75px;
+    font-family: ComicSans;
+    background-color: black;
+    margin: auto;
+    height: auto;
+    width: 350px;
+    height: 110px;
+    border-radius: 5px;
+    padding-right: 10px;
+  }
+  #pari{
+    text-align: center;
+    margin-right: 10px;
+    color: #f0f0f0;
+    font-size: 75px;
+    font-family: ComicSans;
+    background-color: #666666;
+    text-shadow: 1px 4px 4px #555;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    height: auto;
+    margin-left: 25px;
+  }
   a{
     text-decoration: none;
   }
@@ -10,17 +49,26 @@
     display: flex;
     flex-direction: column;
     font-family: ComicSans;
+    background-image: url("images/background.png");
+    background-repeat: round;
     align-items: center;
     width: auto;
     justify-content: center;
-    background-size: cover;
+    text-align: center;
+  }
+  .overlay{
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 100%;
+    height: 100%;
+
   }
   .desc{
     color: #f0f0f0;
     font-size: 50px;
     font-family: ComicSans;
     background-color: #666666;
-    text-shadow: 1px 4px 4px #555;
+    text-shadow: 1px 2px 2px #555;
     text-align: center;
     -webkit-background-clip: text;
       -moz-background-clip: text;
@@ -49,7 +97,11 @@
   .pic-contain{
     height: 250px;
     width: 250px;
-    background-color: antiquewhite;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .par{
     background-color: black;
@@ -63,8 +115,8 @@
   .pic{
     border-radius: 5px;
     align-self: center;
-    height: 250px;
-    width: auto;
+    height: auto;
+    width: 250px;
   }
   .leb{
     color: #f0f0f0;
@@ -73,15 +125,18 @@
     background-color: #666666;
     text-shadow: 1px 4px 4px #555;
     text-align: center;
+    margin-bottom: auto;
+    padding-bottom: auto;
     -webkit-background-clip: text;
       -moz-background-clip: text;
   }
-
+  
 @media only screen and (min-width: 800px) {
   .coupons{
     display: flex;
     position: relative;
     left: -30px;
+    width: 80%;
   }
   body{
     background-image: url(images/background.png);

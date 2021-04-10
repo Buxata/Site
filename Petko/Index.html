@@ -7,7 +7,11 @@
   </head>
 
   <body>
+    <div class="overlay">
     <h1 class="leb">ВАЛДЖЕР ЗА ПЕДГО</h1>
+    <h2 class="leb2">вие имате</h2>
+    <div class="pari"><span id="pari">0</span>пари</div>
+    
     <div class="desc">
       Моля консултирайте се с най-близкият клон на ЕТ Виктория,<br>за да ВЗЕМЕТЕ ЕДИН ОТ СЛЕДНИТЕ ПРОДУКТИ!
     </div>
@@ -22,6 +26,7 @@
           <p class="par">НЕКВИ ОБОВКИ <br>ОДИБОС</p>
         </a>
       </div>
+
       <div class="coupon">
         <a href="https://www.shopsector.com/product/adidas-duramo-sl-16" target="_blank">
           <p class="par">ADIDAS2</p>
@@ -31,17 +36,60 @@
           <p class="par">НЕКВИ ДРУГИ ОБОВКИ<br>ОДИБОС</p>
         </a>
       </div>
+
       <div class="coupon">
         <a href="https://stojka-za-mikrofon.pazaruvaj.com/" target="_blank">
           <p class="par">STOJKA</p>
             <div class="pic-contain">
-              <img class="pic" src="images/stojka.jpg" alt="adidas">
+              <img class="pic" src="images/stojka.jpg" alt="stojka">
             </div>
           <p class="par">НЕКВА СТОЙКА<br>ЗАМИКРОФОН</p>
         </a>
       </div>
-    </div>
-    
 
+      <div class="coupon">
+        <a href="https://50stotinki.com/news/view/13396/VRGO_priplyzna_albumyt_DEVA" target="_blank">
+          <p class="par">ПЛОЧа</p>
+            <div class="pic-contain">
+              <img class="pic" src="images/Plocha.jpg" alt="plocha">
+            </div>
+          <p class="par">V:RGO<br>щотосихипстър</p>
+        </a>
+      </div>
+
+      <div class="coupon">
+        <a href="https://www.shopsector.com/product/reebok-flexagon-energy-tr-30-mt-5" target="_blank">
+          <p class="par">ribok</p>
+            <div class="pic-contain">
+              <img class="pic" src="images/RIBOK.jpg" alt="ribok">
+            </div>
+          <p class="par">Moже и<br>НАСКАРА</p>
+        </a>
+      </div>
+
+      <div class="coupon">
+        <a href="https://www.shopsector.com/product/nike-revolution-5-5" target="_blank">
+          <p class="par">ПОМА</p>
+            <div class="pic-contain">
+              <img class="pic" src="images/пума.jpg" alt="puma">
+            </div>
+          <p class="par">Щото мацки<br>НЗБРАТ</p>
+        </a>
+      </div>
+
+    </div>
+    </div>
+  </body>
+    <script>
+      var parichki = document.getElementById("pari");
+      var num =0;
+      var inter = setInterval(() => {
+        num++;
+        parichki.innerHTML = num;
+        if(num == 135){
+          clearInterval(inter);
+        }
+      }, 10);
+    </script>
  
 </html>
